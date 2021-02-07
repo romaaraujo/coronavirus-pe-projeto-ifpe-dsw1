@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>IFPE CORONAVÍRUS PE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="/./css/folha.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://www.chartjs.org/dist/2.9.4/Chart.min.js"></script>
+    <script src="/./js/dados.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="header">
+            <div class="title">
+                <a href="/">
+                    <h1>CORONAVÍRUS <b>PE</b> <i class="fas fa-virus"></i></h1>
+                </a>
+                <h2>Estatísticas do Estado</h2>
+            </div>
+        </div>
+        <div class="news">
+            <div class="scrolling-wrapper">
+            </div>
+        </div>
+        <div class="row stats">
+            <div class="col">
+                <a href="/pages/estatisticas.html?pagina=casos">
+                    <div class="card">
+                        <div class="title casos"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/pages/estatisticas.html?pagina=mortes">
+                    <div class="card">
+                        <div class="title mortes"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--    PAGE AREA    -->
+        <div class="p-casos">
+            <div class="card"><h1><i class="fas fa-angle-right"></i> Casos Confirmados</h1></div>
+            <div class="row">
+                <div class="col">
+                    <h2>Todo o período</h2>
+                    <div class="card">
+                        <canvas id="casos-diarios" width="693" height="316"></canvas>
+                    </div>
+                </div>
+                <div class="col">
+                    <h2>Evolução nos últimos 7 dias</h2>
+                    <div class="card">
+                        <canvas id="casos-ultimos-7-dias" width="693" height="316"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-mortes">
+            <div class="card"><h1><i class="fas fa-angle-right"></i> Mortes</h1></div>
+            <div class="row">
+                <div class="col">
+                    <h2>Todo o período</h2>
+                    <div class="card">
+                        <canvas id="mortes-diarios" width="693" height="316"></canvas>
+                    </div>
+                </div>
+                <div class="col">
+                    <h2>Evolução nos últimos 7 dias</h2>
+                    <div class="card">
+                        <canvas id="mortes-ultimos-7-dias" width="693" height="316"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-recuperados">REC</div>
+    </div>
+    <script src="/./js/estatisticas.js"></script>
+</body>
+
+</html>

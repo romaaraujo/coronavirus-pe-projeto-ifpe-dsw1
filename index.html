@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>IFPE CORONAVÍRUS PE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/folha.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://www.chartjs.org/dist/2.9.4/Chart.min.js"></script>
+    <script src="./js/dados.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="header">
+            <div class="title">
+                <a href="/">
+                    <h1>CORONAVÍRUS <b>PE</b> <i class="fas fa-virus"></i></h1>
+                </a>
+                <h2>Estatísticas do Estado</h2>
+            </div>
+        </div>
+        <div class="news">
+            <div class="scrolling-wrapper">
+            </div>
+        </div>
+
+        <div class="row stats">
+            <div class="col">
+                <a href="/pages/estatisticas.html?pagina=casos">
+                    <div class="card">
+                        <div class="title casos"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/pages/estatisticas.html?pagina=mortes">
+                    <div class="card">
+                        <div class="title mortes"></div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <!--    PAGE AREA    -->
+        <div class="info">
+            <div class="text-center proteja-se">
+                <a href="/pages/proteger.html">
+                    <div class="title"><i class="fas fa-info-circle"></i> SAIBA COMO SE PROTEGER DO CORONAVÍRUS
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-md-4 testagem">
+                    <a href="/pages/testagem.html">
+                        <div class="card align-bottom"
+                            style="background:url(https://super.abril.com.br/wp-content/uploads/2020/03/si_teste_rapido_corona.jpg) no-repeat left;">
+                            <table style="height: 200px;">
+                                <tbody>
+                                    <tr>
+                                        <td class="align-bottom">COMO REALIZAR O TESTE <b>GRATUITAMENTE</b></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </a>
+                    <br>
+
+                </div>
+                <div class="col-md-8"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card">
+                            <h2><i class="fas fa-angle-right"></i> Casos confirmados em todas as cidades</h2><canvas
+                                id="cidades-inicio-casos" width="693" height="200"></canvas>
+                        </div>
+                        <div class="card">
+                            <h2><i class="fas fa-angle-right"></i> Mortes em todas as cidades</h2><canvas
+                                id="cidades-inicio-mortes" width="693" height="200"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>IFPE CORONAVÍRUS PE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="/./css/folha.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://www.chartjs.org/dist/2.9.4/Chart.min.js"></script>
+    <script src="/./js/dados.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="header">
+            <div class="title">
+                <a href="/">
+                    <h1>CORONAVÍRUS <b>PE</b> <i class="fas fa-virus"></i></h1>
+                </a>
+                <h2>Estatísticas do Estado</h2>
+            </div>
+        </div>
+        <div class="news">
+            <div class="scrolling-wrapper">
+            </div>
+        </div>
+
+        <div class="row stats">
+            <div class="col">
+                <a href="/pages/estatisticas.html?pagina=casos">
+                    <div class="card">
+                        <div class="title casos"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/pages/estatisticas.html?pagina=mortes">
+                    <div class="card">
+                        <div class="title mortes"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--    PAGE AREA    -->
+        <div class="container text-center p-testagem card">
+            <h1>COMO REALIZAR O TESTE <b>GRATUITAMENTE</b></h1>
+            O Governo de Pernambuco disponibilizou uma ferramenta para agendamento da testagem em uma unidade mais
+            próxima de sua
+            residência.<br>
+            <div class="container">
+                <b>www.atendeemcasa.pe.gov.br</b><br>
+                <br><b>I Geres</b> – 9 municípios <br>
+
+                Cabo de Santo Agostinho, São Lourenço da Mata, Abreu e Lima
+
+                Recife (marcação no sistema pela equipe municipal)
+
+                Centros de Testagem Cefospe: Olinda, Paulista, Jaboatão, Camaragibe, Moreno, Igarassu, Abreu e Lima, São
+                Lourenço.
+
+                <hr/><b>II Geres</b> – 18 municípios <br>
+
+                Bom Jardim, Carpina, Casinhas, Cumaru, Feira Nova, João Alfredo, Lagoa de Itaenga, Lagoa do Carro,
+                Machados, Nazaré da Mata, Orobó, Passira, Paudalho, Salgadinho, Surubim, Tracunhaém, Vertente do Lério,
+                Vicência
+
+                <hr/><b>III Geres</b> – 22 municípios<br>
+
+                Água Preta, Amaraji, Barreiros, Belém de Maria, Catende, Cortês, Escada, Gameleira, Jaqueira, Joaquim
+                Nabuco, Lagoa dos Gatos, Maraial, Palmares, Primavera, Quipapá, Ribeirão, Rio Formoso, São Benedito do
+                Sul, São José da Coroa Grande, Sirinhaém, Tamandaré, Xexéu
+
+                <hr/><b>IV Geres</b> – 10 municípios<br>
+
+                Agrestina, Alagoinha, Barra de Guabiraba, Belo Jardim, Bezerros, Brejo da Madre de Deus, Camocim de São
+                Félix, Caruaru, Cupira e Santa Maria do Cambucá
+
+                <hr/><b>V Geres</b> – 21 municípios<br>
+
+                Águas Belas, Angelim, Bom Conselho, Brejão, Caetés, Calçado, Canhotinho, Capoeiras, Correntes,
+                Garanhuns, Iati, Itaíba, Jucati, Jupi, Lagoa do Ouro, Lajedo, Palmeirina, Paranatama, Saloá, São João,
+                Terezinha
+
+                <hr/><b>VI Geres</b> – 13 municípios<br>
+
+                Arcoverde, Buíque, Custodia, Ibimirim, Inajá, Jatobá, Manari, Pedra, Petrolândia, Sertânia, Tacaratu,
+                Tupanatinga, Venturosa
+
+                <hr/><b>VII Geres</b> – 7 municípios<br>
+
+                Belém do São Francisco, Cedro, Mirandiba, Salgueiro, Serrita, Terra Nova, Verdejante
+
+                <hr/><b>VIII Geres</b> – 7 municípios<br>
+
+                Afrânio, Cabrobó, Dormentes, Lagoa Grande, Orocó, Petrolina, Santa Maria da Boa Vista
+
+                <hr/><b>IX Geres</b> – 10 municípios<br>
+
+                Araripina, Exu, Granito, Ipubi, Moreilândia, Ouricuri, Parnamirim, Santa Cruz, Santa Filomena, Trindade
+
+                <hr/><b>X Geres</b> – 12 municípios<br>
+
+                Afogados da Ingazeira, Brejinho, Carnaíba, Iguaracy, Ingazeira, Itapetim, Quixaba, Santa Terezinha, São
+                José do Egito, Solidão, Tabira, Tuparetama
+
+                <hr/><b>XI Geres</b> – 10 municípios<br>
+
+                Betânia, Calumbi, Carnaubeira da Penha, Flores, Floresta, Itacuruba, Santa Cruz da Baixa Verde, São José
+                do Belmonte, Serra Talhada, Triunfo
+
+                <hr/><b>XII Geres</b> – 6 municípios<br>
+
+                Aliança, Ferreiros, Macaparana, Itambé, Itaquitinga, São Vicente Ferrer
+                <hr>
+                Fonte: <b>Secretaria de Saúde de PE</b>
+            </div><br/>
+        </div>
+    </div>
+</body>
+
+</html>
